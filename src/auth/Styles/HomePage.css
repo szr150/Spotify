@@ -1,0 +1,162 @@
+/* Fondo de pantalla completo con imagen */
+.homepage {
+  height: 100vh;
+  background-image: url('https://media.giphy.com/media/iot808wpQ7svOhoMc8/giphy.gif?cid=ecf05e47rhevae93qfzk94qxci98sk0vf3o893pmbdj7ra8l&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #1db954; /* Verde estilo Spotify */
+}
+
+/* Frase al centro */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 12px;
+  width: 80%; 
+  max-width: 900px; 
+  font-weight: bold;
+}
+
+/* Sección principal con la información del usuario y artistas */
+.home-container {
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 20;
+}
+
+/* Información del usuario */
+.user-info {
+  margin-bottom: 20px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-info h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.user-info p {
+  font-size: 1rem;
+  color: #b3b3b3;
+}
+
+/* Lista de artistas */
+.artists-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.artist-item {
+  text-align: center;
+  flex-basis: 20%;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.artist-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.artist-item p {
+  font-size: 1rem;
+  color: white;
+  margin-top: 5px;
+}
+
+/* Estilo para los botones */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .artists-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artist-item {
+    flex-basis: 80%;
+    max-width: 250px;
+  }
+}

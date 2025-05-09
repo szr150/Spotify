@@ -1,0 +1,45 @@
+.informacion-container {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.informacion-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1DB954;
+}
+
+.informacion-container img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #1DB954;
+}
+
+.informacion-container p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.informacion-container h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #1DB954;
+}
+
+.informacion-container ol {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.informacion-container li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #b3b3b3;
+}
